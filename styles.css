@@ -1,0 +1,98 @@
+@font-face{
+	font-family: "noto san";
+	src: url("NotoSans-Light.ttf");
+	font-weight: lighter;
+}
+@font-face{
+	font-family: "noto san";
+	src: url("NotoSans-Bold.ttf");
+	font-weight: bold;
+}
+
+.header {
+	padding: 350px;
+	margin: 0;
+	background-image: url('ogygia.png');
+	background-repeat: no-repeat;
+	background-size: 1600px 1200px;
+	background-position: 50% -230px;
+}
+
+.overlay2 {
+	position: absolute;
+	bottom: 0;
+	left: 100%;
+	right: 0;
+	opacity: 0;
+	background-color: #C2A3CA;
+	overflow: hidden;
+	width: 0;
+	height: 100%;
+	transition: .3s ease;
+}
+
+.overlay2 a {
+	padding: 8px;
+	text-decoration: none;
+	font-family: noto sans;
+	font-weight: bold;
+	font-size: 40px;
+	color: #f1f1f1;
+	display: block;
+	transition: 0.3s;
+}
+
+.overlay2 a:hover, .overlay2 a:focus {
+	color: #818181;
+}
+
+.bar {
+	width: 35px;
+	height: 5px;
+    background-color:white;
+	margin: 3px 0;
+}
+.menu {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+}
+
+.overlay1:hover .overlay2 {
+	width: 100%;
+	left: 0;
+	opacity: 1;
+}
+
+h1 {
+	margin: 20px 0;
+	font-size: 100px;
+}
+
+p {
+	margin: 20px 0;
+	font-size: 100px;
+}
+
+
+.overlay1{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 30%;
+	height: 100%;
+	background-color: #C2A3CA;
+	opacity: 0.8;
+	display: flex;
+	flex-direction: column;
+	color: white;
+	align-items: center;
+	justify-content: center;
+	font-family: "noto sans";
+	font-weight: lighter;
+}
