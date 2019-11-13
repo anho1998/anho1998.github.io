@@ -10,12 +10,14 @@
 }
 
 .header {
-	padding: 350px;
+	padding: 310px;
+	outline-style: none;
 	margin: 0;
-	background-image: url('ogygia.png');
+	background: url('Ogygia_trans.png'), rgba(224,185,218,0.25);
 	background-repeat: no-repeat;
-	background-size: 1600px 1200px;
-	background-position: 50% -230px;
+	background-blend-mode: normal;
+	background-size: 1480px 1110px;
+	background-position: 50% 50%;
 }
 
 .overlay2 {
@@ -36,7 +38,7 @@
 	text-decoration: none;
 	font-family: noto sans;
 	font-weight: bold;
-	font-size: 40px;
+	font-size: 3vw;
 	color: #f1f1f1;
 	display: block;
 	transition: 0.3s;
@@ -76,17 +78,18 @@ h1 {
 
 p {
 	margin: 20px 0;
-	font-size: 100px;
+	font-size: 6vw;
 }
 
 
 .overlay1{
-	position: absolute;
+	position: fixed;
 	bottom: 0;
 	right: 0;
 	width: 30%;
 	height: 100%;
 	background-color: #C2A3CA;
+	background-size: 100% 100%;
 	opacity: 0.8;
 	display: flex;
 	flex-direction: column;
