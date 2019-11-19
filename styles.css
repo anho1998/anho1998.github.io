@@ -13,7 +13,8 @@
 	padding: 310px;
 	outline-style: none;
 	margin: 0;
-	background: url('Ogygia_trans.png'), rgba(224,185,218,0.25);
+	/*background: url('Ogygia_trans.png'), rgba(224,185,218,0.25);*/
+	background: url('Ogygia_trans.png'), rgba(230,218,228,0.25);
 	background-repeat: no-repeat;
 	background-blend-mode: normal;
 	background-size: 1480px 1110px;
