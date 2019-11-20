@@ -23,8 +23,8 @@
 .header {
 	height: 100%;
 	width: 100%;
-	max-width: 100vw;
-	max-height: 100vh;
+	max-width: 100%;
+	max-height: 100%;
 	box-sizing: border-box;
 	margin: auto;
 	background: rgba(243,243,243,0.25);
@@ -44,7 +44,7 @@
 .name{
 	/*color: #C2A3CA;*/
 	color: #5b7dcc;
-	position: fixed;
+	position: absolute;
 	left: 4%;
 	top: 4%;
 	font-size: 4vmax;
@@ -63,12 +63,14 @@
 
 .change .bar1 {
 	-webkit-transform: rotate(-45deg) translate(-9px, 6px);
+	position: fixed;
 	transform: rotate(-45deg) translate(-9px, 6px);
 	background-color: white;
 }
 .change .bar2 {opacity: 0; background-color: white;}
 
 .change .bar3 {
+	position: fixed;
 	background-color: white;
 	-webkit-transform: rotate(45deg) translate(-8px, -8px);
 	transform: rotate(45deg) translate(-8px, -8px);
@@ -76,7 +78,7 @@
 
 .icon{
 	z-index: 2;
-	position: fixed;
+	position: absolute;
 	right: 4%;
 	top: 4%;
 	display: inline-block;
@@ -121,3 +123,49 @@
 	align-content: center;
 	align-items: center;
 }
+
+.about{
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	transition: .5s ease;
+}
+#intro{
+	display: table;
+	background-color: #5b7dcc;
+	position: absolute;
+	width: 100%;
+}
+
+#intro.show{
+	height: 100%;
+	width: 100%;
+	opacity: 0.9;
+	transition: .5s ease;
+}
+
+.topic{
+	color:white;
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	padding-left: 2%;
+	padding-right: 3%;
+	width: 30%;
+	font-size: 5vmax;
+	font-family: sans-serif;
+}
+
+.paragraph{
+	color:white;
+	display: table-cell;
+	vertical-align: middle;
+	text-align: justify;
+	padding-left: 2%;
+	padding-right: 3%;
+	right:0;
+	width: 70%;
+	font-size: 5.5vmin;
+	font-family: sans-serif;
+}
+
